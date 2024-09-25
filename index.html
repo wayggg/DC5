@@ -9,9 +9,9 @@
 <body>
     <!-- 背景音樂 -->
     <audio id="background-music" loop autoplay muted>
-    <source src="5567.mp3" type="audio/mp3"> <!-- 替換成你的音樂檔案 -->
-    您的瀏覽器不支持背景音樂播放。
-</audio>
+        <source src="5567.mp3" type="audio/mp3"> <!-- 替換成你的音樂檔案 -->
+        您的瀏覽器不支持背景音樂播放。
+    </audio>
 
     <header>
         <div class="container">
@@ -57,12 +57,6 @@
     <script>
         const music = document.getElementById("background-music");
         music.volume = 0.1;  // 調整音量
-
-        document.getElementById("play-button").addEventListener("click", function() {
-            music.play().catch(function(error) {
-                console.log("播放音樂失敗：", error);
-            });
-        });
     </script>
 </body>
 </html>
